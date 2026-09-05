@@ -1,0 +1,10 @@
+
+.*
+
+!.gitignore
+!.gitkeep
+
+dependency-reduced-pom.xml
+
+target/
+bin/
