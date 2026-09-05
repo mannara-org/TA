@@ -9,7 +9,7 @@ MODULES := javafx.controls
 TEST := ./src/test/java/Main.java
 MAIN := ./src/main/java/MainApp.java
 
-.PHONY: all clean run
+.PHONY: all clean run test
 
 build: $(MARKER)
 
