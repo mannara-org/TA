@@ -38,7 +38,7 @@ public class AcademicLevel extends Table<AcademicLevel> {
     }
 
     @Override public String toString() {
-        return "Year " + level;
+        return specialty.getAcronyme() + " " + specialty.cycleAccronyme() + level;
     }
 
     public AcademicLevel(Integer level, Specialty specialty) {

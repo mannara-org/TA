@@ -49,6 +49,15 @@ public class Specialty extends Table<Specialty> {
         this.setCycle(cycle);
     }
 
+    public String cycleAccronyme() {
+        if (cycle == null) {
+            return null;
+        } return switch (cycle) {
+            case LICENCE -> "L";
+            case MASTER -> "M";
+        };
+    }
+
     public String getAcronyme() {
         return acronyme;
     }
@@ -70,8 +79,7 @@ public class Specialty extends Table<Specialty> {
     public String getCycle() {
         if (cycle == null) {
             return null;
-        }
-        return switch (cycle) {
+        } return switch (cycle) {
             case LICENCE -> "Licence";
             case MASTER -> "Master";
         };
